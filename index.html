@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+</head>
+
+<body>
+<!--navbar-->
+    <nav class="container">
+        <img src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png" class="logo" width="40" height="40" alt="">
+        <div style="border: 4px solid gray"><a class="active" href="index.html">Home</a></div>
+        <div><a class="active" href="profile.html">Our Profile</a></div>
+        <div class="Portofolio">Portofolio</div>
+        <div class="Message Us">Message Us</div>
+    </nav>
+    
+<!--content-->
+
+
+    <section class="banner">
+        <div class="text">
+        <h1>Hi <span id="nama"></span>, Welcome To Website</h1>
+        </div>
+    </section>
+
+    
+   <script>
+        var name = prompt("Masukkan Nama Kamu");
+        document.getElementById("nama").innerText = name;
+    </script>
+
+
+
+    <div class="text">
+        <h1>Our Headquarter</h1>
+    </div>
+            <div class="galery">
+                <div class="city">
+                    <img src="http://placekitten.com/200/200" alt="" style="border-radius: 50%;">
+                    <h3>Yogyakarta</h3>
+                </div>
+                <div class="city">
+                    <img src="http://placekitten.com/200/200" alt="" style="border-radius: 50%;">
+                    <h3>Bandung</h3>
+                </div>
+                <div class="city">
+                    <img src="http://placekitten.com/200/200" alt="" style="border-radius: 50%;">
+                    <h3>Jakarta</h3>
+                </div>
+            
+            </div>
+
+            <hr class="line">
+     <div class="text">
+        <h1>Message us</h1>
+     </div>
+       
+     
+    <main class="content">
+        <form action="" class="form" onsubmit="return validateForm ()"> 
+            <div class="input-group">
+                <label class="label">Nama</label> : &ThinSpace;
+                <div class="textbox">
+                    <input type="text" name="nama" placeholder="Nama">
+                </div>
+            </div>
+            <div class="input-group">
+                <label class="label">Tanggal Lahir</label> : &ThinSpace;
+                <div class="textbox">
+                    <input type="date" name="tgl" id="">
+                </div>
+            </div>
+            <div class="input-group">
+                <label class="label">Jenis Kelamin</label> : &ThinSpace;
+                <div class="textbox">
+                    <div>
+                        <input type="radio" name="gender" id="" value="Laki-laki">
+                        <label class="label" for="">Laki-laki</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="" value="Perempuan">
+                        <label class="label" for="">Perempuan</label>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group">
+                <label class="label">Pesan</label>  : &ThinSpace;
+                <div class="textbox">
+                    <textarea name="pesan" id="" cols="30" rows="3" placeholder="Pesan"></textarea>
+                </div>
+            </div>
+            
+            <input type="button" value="Submit">
+        </form>
+
+        <script>
+            function validateForm() {
+                var name= document.forms["form"] ["nama"].value;
+                var date= document.forms["form"] ["tgl"].value;
+                var gender= document.forms["form"] ["gender"].value;
+                var messages= document.forms["form"] ["pesan"].value;
+
+                if (nama == "" || tgl == "" || gender == "" || pesan =="")
+                        alert("Tidak boleh ada yang kosong");
+                        return;
+                
+                    document.getElementById("sender-nama").innerText = name;
+                    document.getElementById("sender-tgl").innerText = date;
+                    document.getElementById("sender-gender").innerText = gender;
+                    document.getElementById("sender-pesan").innerText = messages;
+                    return false;
+                
+            }
+        
+        </script>
+
+    
+        <div class="output-form">
+            <p>Nama: <span id="sender-nama"> </span></p>
+            <p>Tanggal Lahir: <span id="sender-tgl"> </span></p>
+            <p>Jenis Kelamin: <span id="sender-gender"> </span></p>
+            <p>Pesan: <span id="sender-pesan"> </span></p>
+        </div>
+
+        
+   </main>
+   
+
+   
+   <hr class="line">
+<!--footer-->
+   
+    <footer>
+        <p>Copyright&copy;2023-Yuni Avita Iswandari</p>
+    </footer>
+    
+</body>
+</html>
