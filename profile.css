@@ -1,0 +1,195 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+    font-family: "Arial";
+   
+
+}
+
+ /* navbar */
+ .container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+.container > div {
+    padding: 10px;
+    text-align: center;
+    font-size: 14sp;
+    color: azure;
+    border: 2px solid;
+    background-color: rgb(182, 182, 182);
+}
+.logo {
+    margin-right: auto;
+}
+
+.active{
+    color: azure;
+}
+ 
+
+.galery{
+    display: inline-flex;
+    align-content: center;
+    justify-content: space-around;
+    margin: 3rem;
+}
+.content{
+    display: flex;
+    margin-top: 3rem;
+    align-content: center;
+    justify-content: space-around;
+}
+
+
+ /* judul */
+    header {
+    padding: 0 3rem; /* jarak kiri kanan */
+    margin-bottom: 3rem;
+    }
+    h1 {
+        color: gray;
+        font-weight: bold;
+        font-size:xx-large;
+        font-family: sans-serif;
+        line-height: 3rem; /* jarak antara h1 dan p */
+        }
+        .text{
+            padding: 0 3rem; /* jarak kiri kanan */
+            margin-bottom: 3rem;
+            margin: 3rem 0 0 0; /* jarak bagian atas */
+            line-height: 3rem; /* jarak antara h1 dan p */
+            font-weight: bold;
+            font-size: x-large;
+        }
+
+    p {
+        padding-top: 1rem;
+        font-size:larger;
+        font-weight: lighter;
+        text-align: center;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        padding-bottom: 3rem;
+    }
+
+ol>li{
+    display:block;
+    text-align:justify;
+    text-align: center;
+    padding:1rem;
+}
+
+.line{
+    border: 3px solid yellow;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.city{
+    display: inline-block;
+    padding: 0 3rem;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+}
+
+
+        /* styling table */
+        .tabel, th, td {
+            border: 1px solid rgb(182, 182, 182);
+            border-collapse: collapse;
+            text-align: center;
+            padding: 10px;
+            font-size: .8rem;
+        }
+        th {
+            background-color: lightgrey;
+        }
+
+        
+        .input-group {
+            display: flex;
+            margin-bottom: 1rem;
+            width: 150%;
+        }
+        
+        .label {
+            flex: 1; /* lebar kolom label */
+        }
+
+        .textbox {
+            flex: 3; /* lebar kolom textbox */
+        }
+
+        input[type="button"] {
+            width: 150%; /* panjang button submit */
+        }
+        
+        /* styling textbox */
+        input[type="text"], input[type="date"], textarea {
+            width: 100%;
+            border: 2px solid lightgray;
+            border-radius: .3rem;
+            padding: .3rem;
+        }
+        
+
+footer>p {
+    background-color: beige;
+    text-align: end;
+}
